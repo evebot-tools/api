@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: #APP#
+  name: api
 spec:
   selector:
     matchLabels:
-      app: #APP#
+      app: api
   template:
     metadata:
       labels:
-        app: #APP#
+        app: api
     spec:
       containers:
-      - name: #APP#
-        image: ghcr.io/evebot-tools/#APP#
+      - name: api
+        image: ghcr.io/evebot-tools/api
         # resources:
         #   limits:
         #     memory: "128Mi"
